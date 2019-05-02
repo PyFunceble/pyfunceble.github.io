@@ -152,7 +152,7 @@
 @attachedTopOffset: 0px;
 @attachedBottomOffset: 0px;
 @attachedHorizontalOffset: -@borderWidth;
-@attachedWidth: ~"calc(100% + "-@attachedHorizontalOffset * 2~")";
+@attachedWidth: calc(100% - (@attachedHorizontalOffset * 2));
 @attachedBoxShadow: none;
 @attachedBorder: @borderWidth solid @solidBorderColor;
 @attachedBottomBoxShadow:
@@ -203,7 +203,7 @@
 @coloredBorderRadius: 0em 0em @borderRadius @borderRadius;
 
 /* Inverted */
-@invertedBackground: #021e3e;
+@invertedBackground: #333333;
 @invertedBorder: none;
 @invertedCellBorderColor: @whiteBorderColor;
 @invertedCellColor: @invertedTextColor;

@@ -4,7 +4,7 @@
   "description": "Pages of PyFunceble",
   "main": "index.js",
   "dependencies": {
-    "semantic-ui": "^2.3.1"
+    "semantic-ui": "^2.4.2"
   },
   "devDependencies": {},
   "scripts": {
