@@ -278,7 +278,8 @@
                     <div class="column">
                         <a class="ui centered card" href="https://gitlab.com/ZeroDot1">
                             <div class="image">
-                                <img src="https://gitlab.com/uploads/-/system/user/avatar/1582607/avatar.png?width=400" loading="lazy">
+                                <img src="https://gitlab.com/uploads/-/system/user/avatar/1582607/avatar.png?width=400"
+                                    loading="lazy">
                                 <div class="ui orange left corner label">
                                     <i class="bolt icon"></i>
                                 </div>
@@ -292,25 +293,50 @@
             </div>
         </div>
 
+        <div class="ui small modal" id="info-before-2-0-0">
+            <div class="ui center aligned header">
+                Information
+            </div>
+            <div class="content">
+                <p>Some of the Contributors listed in this page are not listed into the <b>stable</b> nor the
+                    <b>development</b>
+                    version of PyFunceble because their contributions are still under test or on hold under the <b><a
+                            href="https://github.com/funilrys/PyFunceble/tree/2.x.x">2.x.x branch</a></b>.</p>
+            </div>
+            <div class="action">
+                <div class="ui fluid green ok button">I got it!</div>
+            </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous"></script>
-        <script type="text/javascript" async src="semantic/dist/semantic.min.js"></script>
-        <script>
+        <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
+        <script type="text/javascript">
             $(document).ready(function () {
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function () {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function () {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    });
+                var master_head = $('.masthead');
+                var fixed_menu = $('.fixed.menu');
+                var sidebar = $('.ui.sidebar');
+                var modal_info_before_2_0_0 = $('#info-before-2-0-0');
 
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item');
+                master_head.visibility({
+                    once: false,
+                    onBottomPassed: function () {
+                        fixed_menu.transition('fade in');
+                    },
+                    onBottomPassedReverse: function () {
+                        fixed_menu.transition('fade out');
+                    }
+                });
 
+                sidebar.sidebar('attach events', '.toc.item');
+
+                modal_info_before_2_0_0
+                    .modal('setting', 'closable', false)
+                    .modal('show');
+
+                modal_info_before_2_0_0.find('.ok').on('click', function () {
+                    modal_info_before_2_0_0.modal('hide');
+                });
             });
         </script>
 </body>
