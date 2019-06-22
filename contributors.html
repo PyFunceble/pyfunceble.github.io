@@ -316,7 +316,6 @@
                 var master_head = $('.masthead');
                 var fixed_menu = $('.fixed.menu');
                 var sidebar = $('.ui.sidebar');
-                var modal_info_before_2_0_0 = $('#info-before-2-0-0');
 
                 master_head.visibility({
                     once: false,
@@ -329,14 +328,6 @@
                 });
 
                 sidebar.sidebar('attach events', '.toc.item');
-
-                modal_info_before_2_0_0
-                    .modal('setting', 'closable', false)
-                    .modal('show');
-
-                modal_info_before_2_0_0.find('.ok').on('click', function () {
-                    modal_info_before_2_0_0.modal('hide');
-                });
             });
         </script>
 </body>
