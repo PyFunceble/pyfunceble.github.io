@@ -384,27 +384,9 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous"></script>
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var master_head = $('.masthead');
-            var fixed_menu = $('.fixed.menu');
-            var sidebar = $('.ui.sidebar');
-
-            master_head.visibility({
-                once: false,
-                onBottomPassed: function () {
-                    fixed_menu.transition('fade in');
-                },
-                onBottomPassedReverse: function () {
-                    fixed_menu.transition('fade out');
-                }
-            });
-
-            sidebar.sidebar('attach events', '.toc.item');
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js" ></script>
 </body>
 
 </html>
