@@ -1,6 +1,7 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
 @invertedBackground: #232323;
 
 @masterHeadminHeight: 350px;

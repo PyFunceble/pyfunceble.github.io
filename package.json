@@ -1,9 +1,11 @@
 {
-  "name": "PyFunceble",
+  "name": "pyfunceble.github.io",
   "version": "1.0.0",
-  "description": "Pages of PyFunceble",
+  "description": "The homepage of the PyFunceble project.",
   "main": "index.js",
   "dependencies": {
+    "fomantic-ui": "^2.8.2",
+    "gulp": "^4.0.2",
     "semantic-ui": "^2.4.2"
   },
   "devDependencies": {},
@@ -12,12 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/funilrys/PyFunceble.git"
+    "url": "git+https://github.com/PyFunceble/pyfunceble.github.io.git"
   },
-  "author": "Nissar Chababy (Fun Ilrys)",
+  "keywords": [
+    "PyFunceble"
+  ],
+  "author": "funilrys",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/funilrys/PyFunceble/issues"
+    "url": "https://github.com/PyFunceble/pyfunceble.github.io/issues"
   },
-  "homepage": "https://pyfunceble.github.io"
+  "homepage": "https://github.com/PyFunceble/pyfunceble.github.io#readme"
 }
