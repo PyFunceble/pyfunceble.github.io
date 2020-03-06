@@ -1,0 +1,68 @@
+{
+  "featured": [
+    {
+      "full_name": "Twitter",
+      "avatar": "/images/Twitter_Logo_WhiteOnBlue.png",
+      "links": {
+        "named": [
+          {
+            "description": "#PyFunceble",
+            "link": "https://twitter.com/search?q=%23PyFunceble&src=typed_query&f=live"
+          }
+        ]
+      }
+    }
+  ],
+  "other": [
+    {
+      "full_name": "FilterLists Hub",
+      "avatar": "https://hub.filterlists.com/uploads/default/original/1X/b86c4ea396f065794e438524e152c56d20752d49.jpeg",
+      "links": {
+        "named": [
+          {
+            "description": "Useful tools for maintaining filter lists",
+            "link": "https://hub.filterlists.com/t/useful-tools-for-maintaining-filter-lists/18/7"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Gioxx's Wall",
+      "avatar": "https://gioxx.org/wp-content/themes/standard3_prod/uploads/path4164_header.png",
+      "links": {
+        "named": [
+          {
+            "description": "ABP X Files: le necessarie modifiche per HWS e NoCoin",
+            "link": "https://gioxx.org/2019/09/02/abp-x-files-le-necessarie-modifiche-per-hws-e-nocoin/"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Grant Carthew",
+      "avatar": "https://avatars2.githubusercontent.com/u/572141?s=400&v=4",
+      "links": {
+        "github": "https://github.com/grantcarthew",
+        "named": [
+          {
+            "description": "Notes FOSS",
+            "link": "https://github.com/grantcarthew/notes-foss#tools"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "SMed79",
+      "avatar": "https://avatars1.githubusercontent.com/u/1873139?s=400&v=4",
+      "links": {
+        "github": "https://github.com/smed79",
+        "named": [
+          {
+            "description": "UNIX StackExchange: Ping a host, check if alive or not, and send result to file via a shell script",
+            "link": "https://unix.stackexchange.com/a/394241/206684"
+          }
+        ]
+      }
+    }
+  ]
+}

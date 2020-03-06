@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "full_name": "Pi-Hole",
+      "avatar": "https://avatars1.githubusercontent.com/u/16827203?s=400&v=4",
+      "links": {
+        "github": "https://github.com/pi-hole"
+      }
+    },
+    {
+      "full_name": "Public Suffix List",
+      "avatar": "https://avatars1.githubusercontent.com/u/2463634?s=400&v=4",
+      "links": {
+        "github": "https://github.com/publicsuffix"
+      }
+    }
+  ],
+  "human": [
+    {
+      "full_name": "Adam Warner",
+      "avatar": "https://avatars3.githubusercontent.com/u/1998970?s=400&v=4",
+      "links": {
+        "github": "https://github.com/PromoFaux"
+      }
+    },
+    {
+      "full_name": "Daniel",
+      "avatar": "https://avatars0.githubusercontent.com/u/34774426?s=400&v=4",
+      "links": {
+        "github": "https://github.com/dnmTX"
+      }
+    },
+    {
+      "full_name": "Mitchell Krog",
+      "avatar": "https://avatars3.githubusercontent.com/u/9961541?s=400&v=4",
+      "links": {
+        "github": "https://github.com/mitchellkrogza"
+      }
+    },
+    {
+      "full_name": "Reza Rizqullah",
+      "avatar": "https://avatars3.githubusercontent.com/u/35470865?s=400&v=4",
+      "links": {
+        "github": "https://github.com/ybreza"
+      }
+    },
+    {
+      "full_name": "ScriptTiger",
+      "avatar": "https://avatars0.githubusercontent.com/u/29940916?s=4000&v=4",
+      "links": {
+        "github": "https://github.com/ScriptTiger"
+      }
+    },
+    {
+      "full_name": "SMed79",
+      "avatar": "https://avatars1.githubusercontent.com/u/1873139?s=400&v=4",
+      "links": {
+        "github": "https://github.com/SMed79"
+      }
+    },
+    {
+      "full_name": "spirillen",
+      "avatar": "https://avatars2.githubusercontent.com/u/44526987?s=400&v=4",
+      "links": {
+        "github": "https://github.com/spirillen"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "full_name": "Adblock Plus",
+      "avatar": "https://avatars3.githubusercontent.com/u/610601?s=400&v=4",
+      "links": {
+        "github": "https://github.com/adblockplus",
+        "external": [
+          "https://help.eyeo.com/en/adblockplus/how-to-write-filters?5303c873#creating-filters"
+        ]
+      }
+    },
+    {
+      "full_name": "asciinema",
+      "avatar": "https://avatars1.githubusercontent.com/u/6506055?s=400&v=4",
+      "links": {
+        "github": "https://github.com/asciinema"
+      }
+    },
+    {
+      "full_name": "Box",
+      "avatar": "https://raw.githubusercontent.com/cdgriffith/Box/master/box_logo.png",
+      "links": {
+        "github": "https://github.com/cdgriffith/Box"
+      }
+    },
+    {
+      "full_name": "colorama",
+      "avatar": "https://github.com/tartley/colorama/raw/master/screenshots/ubuntu-demo.png",
+      "links": {
+        "github": "https://github.com/tartley/colorama"
+      }
+    },
+    {
+      "full_name": "DNSPython",
+      "links": {
+        "github": "https://github.com/rthalley/dnspython"
+      }
+    },
+    {
+      "full_name": "PyYaml",
+      "avatar": "https://avatars2.githubusercontent.com/u/69535?s=400&v=4",
+      "links": {
+        "github": "https://github.com/yaml/pyyaml"
+      }
+    },
+    {
+      "full_name": "requests",
+      "avatar": "https://raw.githubusercontent.com/psf/requests/master/ext/requests-logo.png",
+      "links": {
+        "github": "https://github.com/psf/requests"
+      }
+    },
+    {
+      "full_name": "Root Zone Database",
+      "avatar": "https://www.iana.org/_img/2015.1/iana-logo-header-notext.svg",
+      "links": {
+        "external": ["https://www.iana.org/domains/root/db"]
+      }
+    },
+    {
+      "full_name": "Terminalizer",
+      "avatar": "https://github.com/faressoft/terminalizer/raw/master/img/logo.png?raw=true",
+      "links": {
+        "github": "https://github.com/faressoft/terminalizer"
+      }
+    },
+    {
+      "full_name": "yEd Graph Editor",
+      "avatar": "https://www.yworks.com/assets/images/logo.a2a57401.svg",
+      "links": {
+        "external": ["https://www.yworks.com/products/yed"]
+      }
+    }
+  ]
+}

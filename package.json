@@ -1,28 +1,42 @@
 {
-  "name": "pyfunceble.github.io",
+  "name": "app",
+  "homepage": "https://pyfunceble.github.io",
   "version": "1.0.0",
-  "description": "The homepage of the PyFunceble project.",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
-    "fomantic-ui": "^2.8.2",
-    "gulp": "^4.0.2",
-    "semantic-ui": "^2.4.2"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "semantic-ui-react": "^0.88.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PyFunceble/pyfunceble.github.io.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "PyFunceble"
-  ],
-  "author": "funilrys",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PyFunceble/pyfunceble.github.io/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/PyFunceble/pyfunceble.github.io#readme"
+  "devDependencies": {
+    "@craco/craco": "^5.6.3",
+    "@semantic-ui-react/craco-less": "^1.2.1",
+    "semantic-ui-less": "^2.4.1"
+  }
 }

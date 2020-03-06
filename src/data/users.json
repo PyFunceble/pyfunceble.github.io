@@ -1,0 +1,243 @@
+{
+  "entities": [
+    {
+      "full_name": "Dead-Hosts",
+      "avatar": "https://avatars3.githubusercontent.com/u/35098159?s=400&v=4",
+      "links": {
+        "github": "https://github.com/dead.hosts"
+      },
+      "description": "Its infrastructure is actively using PyFunceble!"
+    },
+    {
+      "full_name": "Electronic Frontier Foundation",
+      "avatar": "https://avatars0.githubusercontent.com/u/2120271?s=400&v=4",
+      "links": {
+        "github": "https://github.com/EFForg",
+        "named": [
+          {
+            "description": "Badger Sett",
+            "link": "https://github.com/EFForg/badger-sett"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Ultimate Hosts Blacklist",
+      "avatar": "https://avatars1.githubusercontent.com/u/37181187?s=400&v=4",
+      "links": {
+        "github": "https://github.com/Ultimate-Hosts-Blacklist"
+      },
+      "description": "Its infrastructure is actively using PyFunceble!"
+    }
+  ],
+  "human": [
+    {
+      "full_name": "Anudeep",
+      "avatar": "https://avatars3.githubusercontent.com/u/26179946?s=400&v=4",
+      "links": {
+        "github": "https://github.com/anudeep",
+        "named": [
+          {
+            "description": "Blacklist",
+            "link": "https://github.com/anudeepND/blacklist"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Elias Ojala",
+      "avatar": "https://avatars3.githubusercontent.com/u/5832930?s=400&v=4",
+      "links": {
+        "github": "https://github.com/theel0ja",
+        "named": [
+          {
+            "description": "finnish-easylist-addition",
+            "link": "https://github.com/finnish-easylist-addition/finnish-easylist-addition"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Imre Kristoffer Eilertsen",
+      "avatar": "https://avatars3.githubusercontent.com/u/22780683?s=400&v=4",
+      "links": {
+        "github": "https://github.com/DandelionSprout",
+        "named": [
+          {
+            "description": "adfilt",
+            "link": "https://github.com/DandelionSprout/adfilt"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "jawz101",
+      "avatar": "https://avatars0.githubusercontent.com/u/14151703?s=400&v=4",
+      "links": {
+        "github": "https://github.com/jawz101",
+        "named": [
+          {
+            "description": "MobileAdTrackers",
+            "link": "https://github.com/jawz101/MobileAdTrackers"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "KAD",
+      "avatar": "https://avatars0.githubusercontent.com/u/18347726?s=400&v=4",
+      "links": {
+        "github": "https://github.com/azet12",
+        "named": [
+          {
+            "description": "KADhosts",
+            "link": "https://github.com/azet12/KADhosts"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Kowith Singkornkeeree",
+      "avatar": "https://avatars1.githubusercontent.com/u/16535467?s=400&v=4",
+      "links": {
+        "github": "https://github.com/kowith337",
+        "named": [
+          {
+            "description": "Google AdService and ID.Google tracking hosts",
+            "link": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/hosts_google_adservice_id.txt"
+          },
+          {
+            "description": "Facebook Zero Hosts Block",
+            "link": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/hosts_facebook0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Maciej M.",
+      "avatar": "https://avatars3.githubusercontent.com/u/11302675?s=400&v=4",
+      "links": {
+        "github": "https://github.com/MajkiIT",
+        "named": [
+          {
+            "description": "Polskie Filtry RODO-Ciasteczkowe",
+            "link": "https://github.com/MajkiIT/polish-ads-filter/blob/master/cookies_filters/adblock_cookies.txt"
+          },
+          {
+            "description": "Polish filters for Pi hole",
+            "link": "https://github.com/MajkiIT/polish-ads-filter/blob/master/polish-pihole-filters/hostfile.txt"
+          },
+          {
+            "description": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
+            "link": "https://github.com/MajkiIT/polish-ads-filter/blob/master/polish-adblock-filters/adblock.txt"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Mattias",
+      "avatar": "https://avatars1.githubusercontent.com/u/7415624?s=400&v=4",
+      "links": {
+        "github": "https://github.com/lassekongo83",
+        "named": [
+          {
+            "description": "Frellwit's filter lists",
+            "link": "https://github.com/lassekongo83/Frellwits-filter-lists"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Mitchell Krog",
+      "avatar": "https://avatars2.githubusercontent.com/u/9961541?s=400&v=4",
+      "links": {
+        "github": "https://github.com/mitchellkrogza",
+        "named": [
+          {
+            "description": "Badd-Boyz-Hosts",
+            "link": "https://github.com/mitchellkrogza/Badd-Boyz-Hosts"
+          },
+          {
+            "description": "The Ultimate Hosts Blacklist",
+            "link": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist"
+          },
+          {
+            "description": "The Big List of Hacked Malware Web Sites",
+            "link": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites"
+          },
+          {
+            "description": "Phishing Domain Database",
+            "link": "https://github.com/mitchellkrogza/Phishing.Database"
+          },
+          {
+            "description": "HOW TO Stop Google Analytics \"Ghost\" Spam",
+            "link": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO"
+          },
+          {
+            "description": "Phishing Domain Database",
+            "link": "https://github.com/mitchellkrogza/Phishing.Database"
+          },
+          {
+            "description": "Top-Attacking-IP-Addresses-Against-Wordpress-Sites",
+            "link": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Tomasz Przybył",
+      "avatar": "https://avatars0.githubusercontent.com/u/9846948?s=400&v=4",
+      "links": {
+        "github": "https://github.com/FadeMind",
+        "named": [
+          {
+            "description": "add.2o7Net",
+            "link": "https://github.com/FadeMind/hosts.extras/tree/master/add.2o7Net"
+          },
+          {
+            "description": "add.Dead",
+            "link": "https://github.com/FadeMind/hosts.extras/tree/master/add.Dead"
+          },
+          {
+            "description": "add.Risk",
+            "link": "https://github.com/FadeMind/hosts.extras/tree/master/add.Risk"
+          },
+          {
+            "description": "add.Spam",
+            "link": "https://github.com/FadeMind/hosts.extras/tree/master/add.Spam"
+          },
+          {
+            "description": "UncheckyAds",
+            "link": "https://github.com/FadeMind/hosts.extras/tree/master/UncheckyAds"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "xxcriticxx",
+      "avatar": "https://avatars1.githubusercontent.com/u/15007183?s=400&v=4",
+      "links": {
+        "github": "https://github.com/xxcriticxx",
+        "named": [
+          {
+            "description": ".pl-host-file",
+            "link": "https://github.com/xxcriticxx/.pl-host-file"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "ZeroDot1",
+      "avatar": "https://gitlab.com/uploads/-/system/user/avatar/1582607/avatar.png?width=400",
+      "links": {
+        "github": "https://github.com/ZeroDot1",
+        "named": [
+          {
+            "description": "CoinBlockerLists",
+            "link": "https://zerodot1.gitlab.io/CoinBlockerListsWeb/"
+          }
+        ]
+      }
+    }
+  ]
+}
