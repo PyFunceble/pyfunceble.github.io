@@ -10,17 +10,38 @@
       content="The tool to check the availability or syntax of dodmains, IP or URL."
     />
 
-    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="%PUBLIC_URL%/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="%PUBLIC_URL%/images/favicon/safari-pinned-tab.svg" color="#00a14b">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="PyFunceble">
-    <meta name="application-name" content="PyFunceble">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-config" content="%PUBLIC_URL%/images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="%PUBLIC_URL%/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="%PUBLIC_URL%/images/favicon/safari-pinned-tab.svg"
+      color="#00a14b"
+    />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="PyFunceble" />
+    <meta name="application-name" content="PyFunceble" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta
+      name="msapplication-config"
+      content="%PUBLIC_URL%/images/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -37,8 +58,41 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <link href="//cdn.jsdelivr.net/gh/Lukas-W/font-logos@v0.11/assets/font-logos.css" rel="stylesheet">
+    <link
+      href="//cdn.jsdelivr.net/gh/Lukas-W/font-logos@v0.11/assets/font-logos.css"
+      rel="stylesheet"
+    />
     <title>PyFunceble</title>
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search
+            .slice(1)
+            .split("&")
+            .forEach(function(v) {
+              var a = v.split("=");
+              q[a[0]] = a
+                .slice(1)
+                .join("=")
+                .replace(/~and~/g, "&");
+            });
+          if (q.p !== undefined) {
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) +
+                (q.p || "") +
+                (q.q ? "?" + q.q : "") +
+                l.hash
+            );
+          }
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
