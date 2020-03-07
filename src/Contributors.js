@@ -60,11 +60,18 @@ export default class Contributors extends React.Component {
             </Card.Content>
             {"links" in info &&
               info.links &&
-              ("github" in info.links || "external" in info.links) && (
+              ("github" in info.links ||
+                "external" in info.links ||
+                "gitlab" in info.links) && (
                 <Card.Content textAlign="center" extra>
                   {"github" in info.links && info.links.github && (
                     <a href={info.links.github}>
                       <Icon size="large" name="github" />
+                    </a>
+                  )}
+                  {"gitlab" in info.links && info.links.gitlab && (
+                    <a href={info.links.gitlab}>
+                      <Icon size="large" name="gitlab" />
                     </a>
                   )}
                   {"external" in info.links &&
