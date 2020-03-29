@@ -256,6 +256,19 @@
           }
         ]
       }
+    },
+    {
+      "full_name": "asaddon",
+      "avatar": "https://avatars1.githubusercontent.com/u/21283991?s=400&v=4",
+      "links": {
+        "github": "https://github.com/xxcriticxx",
+        "named": [
+          {
+            "description": "Asads-Hosts",
+            "link": "https://github.com/asaddon/Asads-Hosts"
+          }
+        ]
+      }
     }
   ]
 }
