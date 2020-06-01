@@ -24,7 +24,7 @@ export default class Heading extends React.Component {
           inverted
           style={{
             fontSize: this.props.mobile ? "1.7em" : "1.9em",
-            fontWeight: "normal"
+            fontWeight: "normal",
             // marginTop: mobile ? "0.5em" : "1.5em"
           }}
         />
@@ -45,9 +45,11 @@ export default class Heading extends React.Component {
           <Icon inverted name="book" />
           Documentation
         </Button>
+
         <Divider horizontal inverted>
           Get It
         </Divider>
+
         <Button
           as="a"
           color="blue"
@@ -75,6 +77,9 @@ export default class Heading extends React.Component {
           <Icon inverted className="fl-archlinux" />
           AUR
         </Button>
+
+        <Divider horizontal inverted></Divider>
+
         <Button
           as="a"
           color="blue"
@@ -84,12 +89,19 @@ export default class Heading extends React.Component {
           <Icon inverted className="docker" />
           Docker
         </Button>
-
+        <Button
+          as="a"
+          color="green"
+          size="huge"
+          href="https://anaconda.org/pyfunceble/repo"
+        >
+          Anaconda
+        </Button>
       </Container>
     );
   }
 }
 
 Heading.propTypes = {
-  mobile: PropTypes.bool
+  mobile: PropTypes.bool,
 };
