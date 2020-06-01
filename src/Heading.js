@@ -84,7 +84,7 @@ export default class Heading extends React.Component {
           as="a"
           color="blue"
           size="huge"
-          href="https://hub.docker.com/u/pyfunceble"
+          href="https://hub.docker.com/r/pyfunceble/pyfunceble"
         >
           <Icon inverted className="docker" />
           Docker
