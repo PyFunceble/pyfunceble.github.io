@@ -93,7 +93,7 @@ export default class Heading extends React.Component {
           as="a"
           color="green"
           size="huge"
-          href="https://anaconda.org/pyfunceble/repo"
+          href="https://anaconda.org/pyfunceble/pyfunceble"
         >
           Anaconda
         </Button>
