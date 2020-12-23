@@ -62,7 +62,10 @@
       "full_name": "spirillen",
       "avatar": "https://avatars2.githubusercontent.com/u/44526987?s=400&v=4",
       "links": {
-        "github": "https://github.com/spirillen"
+        "github": "https://github.com/spirillen",
+        "external": [
+          "https://www.mypdns.org/p/Spirillen/"
+        ]
       }
     }
   ],
