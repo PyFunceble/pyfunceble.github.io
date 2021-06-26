@@ -203,6 +203,19 @@
       }
     },
     {
+      "full_name": "Steven Black",
+      "avatar": "https://avatars.githubusercontent.com/u/80144?s=400&v=4",
+      "links": {
+        "github": "https://github.com/stevenblack",
+        "named": [
+          {
+            "description": "Steven Black's ad-hoc list",
+            "link": "https://github.com/StevenBlack/hosts/blob/master/data/StevenBlack/hosts"
+          }
+        ]
+      }
+    },
+    {
       "full_name": "Tomasz Przybył",
       "avatar": "https://avatars0.githubusercontent.com/u/9846948?s=400&v=4",
       "links": {
