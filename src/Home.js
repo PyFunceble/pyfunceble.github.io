@@ -32,12 +32,6 @@ export default class Home extends React.Component {
                 />
                 <Image
                   as="a"
-                  href="https://www.codacy.com/app/funilrys/PyFunceble?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=funilrys/PyFunceble&amp;utm_campaign=Badge_Grade"
-                  src="https://api.codacy.com/project/badge/Grade/3f7684ffe6fc44d781ca0f26e0221928"
-                  alt="Codacy Coverage Status"
-                />
-                <Image
-                  as="a"
                   href="https://github.com/funilrys/PyFunceble/blob/master/LICENSE"
                   src="https://img.shields.io/github/license/funilrys/PyFunceble.svg"
                   alt="License"
