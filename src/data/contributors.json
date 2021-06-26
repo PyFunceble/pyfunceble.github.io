@@ -10,10 +10,10 @@
   ],
   "contributors": [
     {
-      "full_name": "hawkeye116477",
-      "avatar": "https://avatars3.githubusercontent.com/u/19818572?s=400&v=4",
+      "full_name": "Avinash Reddy",
+      "avatar": "https://avatars.githubusercontent.com/u/27774996?s=400&v=4",
       "links": {
-        "github": "https://github.com/hawkeye116477"
+        "github": "https://github.com/AvinashReddy3108"
       }
     },
     {
@@ -21,6 +21,13 @@
       "avatar": "https://avatars0.githubusercontent.com/u/34774426?s=400&v=4",
       "links": {
         "github": "https://github.com/dnmTX"
+      }
+    },
+    {
+      "full_name": "hawkeye116477",
+      "avatar": "https://avatars3.githubusercontent.com/u/19818572?s=400&v=4",
+      "links": {
+        "github": "https://github.com/hawkeye116477"
       }
     },
     {
@@ -98,9 +105,7 @@
       "avatar": "https://avatars2.githubusercontent.com/u/44526987?s=400&v=4",
       "links": {
         "github": "https://github.com/spirillen",
-        "external": [
-          "https://www.mypdns.org/p/Spirillen/"
-        ]
+        "external": ["https://www.mypdns.org/p/Spirillen/"]
       }
     },
     {
@@ -132,10 +137,31 @@
       }
     },
     {
+      "full_name": "keczuppp",
+      "avatar": "https://avatars.githubusercontent.com/u/74409207?s=400&v=4",
+      "links": {
+        "github": "https://github.com/keczuppp"
+      }
+    },
+    {
       "full_name": "NeolithEra",
       "avatar": "https://avatars1.githubusercontent.com/u/52778917?s=400&v=4",
       "links": {
         "github": "https://github.com/NeolithEra"
+      }
+    },
+    {
+      "full_name": "rusty-snake",
+      "avatar": "https://avatars.githubusercontent.com/u/41237666?s=400&v=4",
+      "links": {
+        "github": "https://github.com/rusty-snake"
+      }
+    },
+    {
+      "full_name": "Yuki2718",
+      "avatar": "https://avatars.githubusercontent.com/u/58900598?s=400&v=4",
+      "links": {
+        "github": "https://github.com/Yuki2718"
       }
     }
   ]
