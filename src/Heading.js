@@ -78,24 +78,14 @@ export default class Heading extends React.Component {
           AUR
         </Button>
 
-        <Divider horizontal inverted></Divider>
-
         <Button
           as="a"
           color="blue"
           size="huge"
           href="https://hub.docker.com/r/pyfunceble/pyfunceble"
         >
-          <Icon inverted className="docker" />
+          <Icon inverted className="fa-docker" />
           Docker
-        </Button>
-        <Button
-          as="a"
-          color="green"
-          size="huge"
-          href="https://anaconda.org/pyfunceble/pyfunceble"
-        >
-          Anaconda
         </Button>
       </Container>
     );
