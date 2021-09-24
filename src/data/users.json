@@ -274,11 +274,37 @@
       "full_name": "asaddon",
       "avatar": "https://avatars1.githubusercontent.com/u/21283991?s=400&v=4",
       "links": {
-        "github": "https://github.com/xxcriticxx",
+        "github": "https://github.com/asaddon",
         "named": [
           {
             "description": "Asads-Hosts",
             "link": "https://github.com/asaddon/Asads-Hosts"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "LanikSJ",
+      "avatar": "https://avatars.githubusercontent.com/u/12159404?s=400&v=4",
+      "links": {
+        "github": "https://github.com/LanikSJ",
+        "named": [
+          {
+            "description": "ubo-filters",
+            "link": "https://github.com/LanikSJ/ubo-filters"
+          }
+        ]
+      }
+    },
+    {
+      "full_name": "Yuki2718",
+      "avatar": "https://avatars.githubusercontent.com/u/58900598?s=400&v=4",
+      "links": {
+        "github": "https://github.com/Yuki2718",
+        "named": [
+          {
+            "description": "adblock",
+            "link": "https://github.com/Yuki2718/adblock"
           }
         ]
       }
