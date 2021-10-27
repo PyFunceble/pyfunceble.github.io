@@ -7,29 +7,46 @@ import {
   Embed
 } from "semantic-ui-react";
 
+import asciinema_demo_data from "./data/asciinema_demo";
+
 export default class Home extends React.Component {
   componentDidMount() {
     document.title = "Home | PyFunceble";
   }
 
+  createDemoRows() {
+    return asciinema_demo_data.map(data => {
+      return (
+        <Grid.Row>
+          <Grid.Column>
+            <Header textAlign="center" size="large" as="h3">
+              {data.title}
+            </Header>
+            <Embed
+              url={data.link}
+              active={true}
+            />
+          </Grid.Column>
+        </Grid.Row>
+      )
+
+    });
+  }
+
   render() {
     return (
-        <Segment basic padded='very'>
-          <Grid container stackable verticalAlign="middle" centered>
-            <Grid.Row centered>
-              <Grid.Column textAlign="center">
+      <Segment basic padded='very'>
+        <Grid container stackable verticalAlign="middle" centered>
+          <Grid.Row centered>
+            <Grid.Column textAlign="center">
+              <Image.Group size='small'>
                 <Image
                   as="a"
-                  href="https://travis-ci.com/funilrys/PyFunceble"
-                  src="https://travis-ci.com/funilrys/PyFunceble.svg?branch=master"
-                  alt="Build Status"
-                />
-                <Image
-                  as="a"
-                  href="https://coveralls.io/github/funilrys/PyFunceble?branch=master"
-                  src="https://coveralls.io/repos/github/funilrys/PyFunceble/badge.svg?branch=master"
+                  href="https://coveralls.io/github/funilrys/PyFunceble?branch=dev"
+                  src="https://coveralls.io/repos/github/funilrys/PyFunceble/badge.svg?branch=dev"
                   alt="Coverage Status"
                 />
+                |
                 <Image
                   as="a"
                   href="https://github.com/funilrys/PyFunceble/blob/master/LICENSE"
@@ -44,54 +61,37 @@ export default class Home extends React.Component {
                 />
                 <Image
                   as="a"
-                  href="https://github.com/psf/black"
-                  src="https://img.shields.io/badge/code%20style-black-000000.svg"
-                  alt="Code style | Black"
+                  href="hhttps://pepy.tech/project/pyfunceble-dev"
+                  src="https://static.pepy.tech/personalized-badge/pyfunceble-dev?period=total&units=international_system&left_color=black&right_color=orange&left_text=⬇️%20(Total)"
+                  alt="Total Downloads"
                 />
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <Header textAlign="center" size="large" as="h3">
-                  PyFunceble gives you the availability of a domain!
-                </Header>
-                <Embed
-                  url="https://asciinema.org/a/cx4FBM7FqRNTYbpT9d8KI834S/iframe"
-                  active={true}
+                <Image
+                  as="a"
+                  href="hhttps://pepy.tech/project/pyfunceble-dev"
+                  src="https://static.pepy.tech/personalized-badge/pyfunceble-dev?period=month&units=international_system&left_color=black&right_color=orange&left_text=⬇️%20(30%20Days)"
+                  alt="Total Downloads"
                 />
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <Header textAlign="center" size="large" as="h3">
-                  PyFunceble gives you the availability of an IPv4!
-                </Header>
-                <Embed
-                  url="https://asciinema.org/a/hoBvo6l4H3dgUU2GHBFRUVtfE/iframe"
-                  active={true}
+                <Image
+                  as="a"
+                  href="hhttps://pepy.tech/project/pyfunceble-dev"
+                  src="https://static.pepy.tech/personalized-badge/pyfunceble-dev?period=week&units=international_system&left_color=black&right_color=orange&left_text=⬇️%20(7%20Days)"
+                  alt="Total Downloads"
                 />
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <Header textAlign="center" size="large" as="h3">
-                  PyFunceble gives you the availability of a URL!
-                </Header>
-                <Embed
-                  url="https://asciinema.org/a/leyyGQZopcF6JtXVZCLcx8ajp/iframe"
-                  active={true}
-                />
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <Header textAlign="center" size="large" as="h3">
-                  And a lot more!
-                </Header>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Segment>
+              </Image.Group>
+            </Grid.Column>
+          </Grid.Row>
+
+          {this.createDemoRows()}
+
+          <Grid.Row>
+            <Grid.Column>
+              <Header textAlign="center" size="large" as="h3">
+                And a lot more!
+              </Header>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
     );
   }
 }
