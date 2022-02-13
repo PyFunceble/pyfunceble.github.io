@@ -105,7 +105,9 @@
       "avatar": "https://avatars2.githubusercontent.com/u/44526987?s=400&v=4",
       "links": {
         "github": "https://github.com/spirillen",
-        "external": ["https://www.mypdns.org/p/Spirillen/"]
+        "external": [
+          "https://www.mypdns.org/p/Spirillen/"
+        ]
       }
     },
     {
@@ -176,6 +178,13 @@
       "avatar": "https://avatars.githubusercontent.com/u/1214129?s=400&v=4",
       "links": {
         "github": "https://github.com/T145"
+      }
+    },
+    {
+      "full_name": "avatartw",
+      "avatar": "https://avatars.githubusercontent.com/u/69660730?s=400&v=4",
+      "links": {
+        "github": "https://github.com/avatartw"
       }
     }
   ]
