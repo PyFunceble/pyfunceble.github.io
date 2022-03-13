@@ -37,7 +37,10 @@ jobs:
 
       - name: "Deploy ⚛️ to GH Pages"
         run: |
+          git remote set-url origin https://x-access-token:${{ secrets.BOT_REPO_PAT }}@github.com/${{ github.repository }}.git
           yarn deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_REPO_PAT }}
 
       # - name: "Deploy ⚛️ to GH Pages"
       #   uses: peaceiris/actions-gh-pages@v3
