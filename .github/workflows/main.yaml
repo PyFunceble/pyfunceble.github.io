@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v2
         name: Setup Node
         with:
-          node-version: lts
+          node-version: 16
 
       - name: Install dependencies
         run: yarn install
