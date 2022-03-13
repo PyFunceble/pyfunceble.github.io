@@ -7,7 +7,7 @@ import {
   Embed
 } from "semantic-ui-react";
 
-import asciinema_demo_data from "./data/asciinema_demo";
+import asciinema_landing_data from "./data/asciinema_landing";
 
 export default class Home extends React.Component {
   componentDidMount() {
@@ -15,7 +15,7 @@ export default class Home extends React.Component {
   }
 
   createDemoRows() {
-    return asciinema_demo_data.map(data => {
+    return asciinema_landing_data.map(data => {
       return (
         <Grid.Row>
           <Grid.Column>

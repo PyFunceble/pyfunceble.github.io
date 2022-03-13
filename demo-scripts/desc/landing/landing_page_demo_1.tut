@@ -1,0 +1,19 @@
+#!/usr/bin/env tuterm
+
+# pyfunceble-io-title: PyFunceble gives you the availability of a domain!
+# asciinema-title: PyFunceble domains availability
+# asciinema-cols: 200
+# asciinema-rows: 20
+
+source config.sh.in
+
+run() {
+    c pyfunceble --version
+    c pyfunceble -a -d example.org
+    c pyfunceble -a -d example.org --whois-lookup
+    c pyfunceble -a -d exampleeeeeeeeeeeeeeeeeeeee.com
+    c pyfunceble -a -d microsoft_google.com
+    c exit
+}
+
+# vim: filetype=sh
