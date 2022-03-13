@@ -29,8 +29,8 @@ jobs:
 
       - name: Setup Git
         run: |
-          git config user.email ${GIT_EMAIL}
-          git config user.name ${GIT_NAME}
+          git config --global user.email ${GIT_EMAIL}
+          git config --global user.name ${GIT_NAME}
 
       - name: Install dependencies
         run: yarn install
