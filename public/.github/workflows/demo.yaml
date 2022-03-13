@@ -2,9 +2,9 @@ name: Build and Deploy Demo
 on:
   workflow_dispatch:
     inputs:
-      demoEnvironment:
+      demoPackage:
         description: "Demo Environment"
-        required: false
+        required: true
         default: "pyfunceble"
         type: choice
         options:
@@ -45,7 +45,7 @@ jobs:
           pacman -S --needed --noconfirm git binutils pacman-contrib openssh rsync python python-setuptools jq python-pip asciinema
           pip install --pre ${PYFUNCEBLE_PKG_NAME}
         env:
-          PYFUNCEBLE_PKG_NAME: ${{ github.event.inputs.demoEnvironment }}
+          PYFUNCEBLE_PKG_NAME: ${{ github.event.inputs.demoPackage }}
 
       - name: Configure Dependencies
         run: |
