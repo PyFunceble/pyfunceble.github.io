@@ -12,9 +12,6 @@ jobs:
 
     runs-on: "ubuntu-latest"
 
-    container:
-      image: archlinux
-
     steps:
       - uses: actions/checkout@v3
         name: Clone repository
