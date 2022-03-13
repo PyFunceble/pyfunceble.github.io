@@ -1,5 +1,4 @@
 name: Deploy Changes
-
 on:
   push:
     branches:
@@ -9,27 +8,27 @@ jobs:
   deploy_to_gh_pages:
     name: "Deploy ⚛️ to GH Pages"
 
-  if: github.event_name == 'push' && github.ref == 'refs/heads/react-src'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/react-src'
 
-  runs-on: "ubuntu-latest"
+    runs-on: "ubuntu-latest"
 
-  container:
-    image: archlinux
+    container:
+      image: archlinux
 
-  steps:
-    - uses: actions/checkout@v3
-      name: Clone repository
-      with:
-        ref: react-src
+    steps:
+      - uses: actions/checkout@v3
+        name: Clone repository
+        with:
+          ref: react-src
 
-    - uses: actions/setup-node@v2
-      name: Setup Node
-      with:
-        node-version: 17
+      - uses: actions/setup-node@v2
+        name: Setup Node
+        with:
+          node-version: 17
 
-    - name: Install dependencies
-      run: yarn install
+      - name: Install dependencies
+        run: yarn install
 
-    - name: "Deploy ⚛️ to GH Pages"
-      run: yarn deploy
+      - name: "Deploy ⚛️ to GH Pages"
+        run: yarn deploy
 
