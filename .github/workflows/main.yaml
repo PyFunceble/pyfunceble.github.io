@@ -31,18 +31,10 @@ jobs:
         run: |
           git config --global user.name ${{ secrets.GIT_BOT_NAME }}
           git config --global user.email ${{ secrets.GIT_BOT_EMAIL }}
-          git remote set-url origin https://${{ secrets.GIT_BOT_NAME }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://${{ secrets.GIT_BOT_NAME }}:${{ secrets.BOT_REPO_PAT }}@github.com/${{ github.repository }}.git
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_REPO_PAT }}
 
       - name: "Deploy ⚛️ to GH Pages"
         run: yarn deploy
 
-      # - name: "Deploy ⚛️ to GH Pages"
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.BOT_REPO_PAT }}
-      #     publish_dir: ./build
-      #     publish_branch: master
-      #     user_name: ${{ secrets.GIT_BOT_NAME }}
-      #     user_email: ${{ secrets.GIT_BOT_EMAIL }}
