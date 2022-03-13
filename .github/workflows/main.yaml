@@ -4,6 +4,10 @@ on:
     branches:
       - react-src
 
+env:
+  GIT_NAME: "${{ secrets.GIT_BOT_NAME }}"
+  GIT_EMAIL: "${{ secrets.GIT_BOT_EMAIL }}"
+
 jobs:
   deploy_to_gh_pages:
     name: "Deploy ⚛️ to GH Pages"
@@ -22,6 +26,11 @@ jobs:
         name: Setup Node
         with:
           node-version: 16
+
+      - name: Setup Git
+        run: |
+          git config user.email ${GIT_EMAIL}
+          git config user.name ${GIT_NAME}
 
       - name: Install dependencies
         run: yarn install
