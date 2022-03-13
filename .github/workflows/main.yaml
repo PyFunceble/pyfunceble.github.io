@@ -3,16 +3,6 @@ on:
   push:
     branches:
       - react-src
-  workflow_dispatch:
-    inputs:
-      demoEnvironment:
-        description: "Demo Environment"
-        required: false
-        default: "pyfunceble"
-        type: choice
-        options:
-          - pyfunceble
-          - pyfunceble-dev
 
 jobs:
   deploy_to_gh_pages:
