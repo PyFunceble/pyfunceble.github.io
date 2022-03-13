@@ -1,4 +1,4 @@
-name: Build & Deploy Demo
+name: Build and Deploy Demo
 on:
   workflow_dispatch:
     inputs:
