@@ -4,10 +4,6 @@ on:
     branches:
       - react-src
 
-env:
-  GIT_NAME: "${{ secrets.GIT_BOT_NAME }}"
-  GIT_EMAIL: "${{ secrets.GIT_BOT_EMAIL }}"
-
 jobs:
   deploy_to_gh_pages:
     name: "Deploy ⚛️ to GH Pages"
@@ -36,5 +32,9 @@ jobs:
         run: yarn install
 
       - name: "Deploy ⚛️ to GH Pages"
-        run: yarn deploy
-
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.BOT_REPO_PAT }}
+          publish_branch: master
+          user_name: ${{ secrets.GIT_BOT_NAME }}
+          user_email: ${{ secrets.GIT_BOT_EMAIL }}
