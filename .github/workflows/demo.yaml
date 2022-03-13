@@ -1,0 +1,93 @@
+name: Build and Deploy Demo
+on:
+  workflow_dispatch:
+    inputs:
+      demoPackage:
+        description: "Demo Environment"
+        required: true
+        default: "pyfunceble"
+        type: choice
+        options:
+          - pyfunceble
+          - pyfunceble-dev
+
+jobs:
+  record_and_deploy_demo:
+    name: "Play and Deploy Demos"
+
+    if: github.event_name == 'workflow_dispatch'
+
+    runs-on: "ubuntu-latest"
+
+    container:
+      image: archlinux
+
+    steps:
+      - uses: actions/checkout@v3
+        name: Clone repository
+        with:
+          ref: react-src
+
+      - name: Get time for cache
+        id: cache_time
+        run: echo "::set-output name=time::$(date +%F-%T)"
+
+      - name: Set up cache
+        uses: actions/cache@master
+        with:
+          path: /var/cache/pacman/pkg
+          key: pacman-cache-x86_64-${{ steps.cache_time.outputs.time }}
+          restore-keys: pacman-cache-x86_64-
+
+      - name: Install dependencies
+        run: |
+          pacman -Syu --needed --noconfirm && \
+          pacman -S --needed --noconfirm git binutils pacman-contrib openssh rsync python python-setuptools jq python-pip asciinema
+          pip install --pre ${PYFUNCEBLE_PKG_NAME}
+        env:
+          PYFUNCEBLE_PKG_NAME: ${{ github.event.inputs.demoPackage }}
+
+      - name: Configure Dependencies
+        run: |
+          asciinemaConfigDir=${HOME}/.config/asciinema
+          asciinemaConfigFile=${asciinemaConfigDir}/install-id
+
+          [[ ! -d ${asciinemaConfigDir} ]] && mkdir -p ${asciinemaConfigDir}
+          printf "${{ secrets.ASCIINEMA_TOKEN }}" > ${asciinemaConfigFile}
+
+          git config --global user.name ${{ secrets.GIT_BOT_NAME }}
+          git config --global user.email ${{ secrets.GIT_BOT_EMAIL }}
+        # env:
+        #   ASCIINEMA_TOKEN: ${{ secrets.ASCIINEMA_TOKEN }}
+
+      - name: Print asciinema version
+        run: asciinema --version
+
+      - name: Print PyFunceble version
+        run: pyfunceble --version
+
+      - name: Record landing demos
+        run: |
+          cd demo-scripts
+          ./record_all.sh landing
+          cd -
+
+      - name: Upload landing demos
+        run: |
+          cd demo-scripts
+          ./upload_all.sh landing
+          cd -
+
+      - name: Install Demo links
+        run:
+          for file in /tmp/pyfunceble-demos/*.json
+          do
+            cat ${file} | jq > ./src/data/$(basename ${file})
+          done
+
+      - name: Push changes
+        run: |
+          git add ./src/data/*.json
+          git commit -m 'Update Demos'
+          git push origin react-src
+
