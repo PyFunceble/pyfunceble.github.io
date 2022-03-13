@@ -17,6 +17,7 @@ jobs:
         name: Clone repository
         with:
           ref: react-src
+          token: ${{ secrets.BOT_REPO_PAT }}
 
       - uses: actions/setup-node@v2
         name: Setup Node
