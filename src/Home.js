@@ -23,7 +23,7 @@ export default class Home extends React.Component {
               {data.title}
             </Header>
             <Embed
-              url={data.link}
+              url={data.link + '?cols=200&rows=47&theme=asciinema'}
               active={true}
             />
           </Grid.Column>
