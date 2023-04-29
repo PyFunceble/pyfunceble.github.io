@@ -15,7 +15,13 @@ then
 fi
 
 for file in "${@}"; do
-    castFile="/${tmpDir}/$(basename "${file}").cast"
+    filename="$(basename "${file}")"
+    uploadLog="${tmpDir}/${filename}.upload.log"
+    castFile="${tmpDir}/${filename}.cast"
 
-    asciinema upload ${castFile} | grep 'https:' | sed 's/^\s*//'
+    rm -f "${uploadLog}"
+
+    asciinema upload ${castFile} &> "${uploadLog}"
+
+    grep 'https:' "${uploadLog}" | sed 's/^\s*//'
 done

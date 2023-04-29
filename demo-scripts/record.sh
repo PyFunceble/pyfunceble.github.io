@@ -17,9 +17,9 @@ pyfunceble --version >/dev/null
 
 for file in "${@}"; do
     castFile="${tmpDir}/$(basename "${file}").cast"
-    castTitle="$(fgrep "asciinema-title" ${file} | awk -v FS=": " '{ print $2}')"
-    castColumns="$(fgrep "asciinema-cols" ${file} | awk -v FS=": " '{ print $2}')"
-    castRows="$(fgrep "asciinema-rows" ${file} | awk -v FS=": " '{ print $2}')"
+    castTitle="$(grep "asciinema-title" ${file} | awk -v FS=": " '{ print $2}')"
+    castColumns="$(grep "asciinema-cols" ${file} | awk -v FS=": " '{ print $2}')"
+    castRows="$(grep "asciinema-rows" ${file} | awk -v FS=": " '{ print $2}')"
 
     if [[ -z "${castTitle}" ]]
     then

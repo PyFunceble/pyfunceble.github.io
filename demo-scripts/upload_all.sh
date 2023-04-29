@@ -24,7 +24,7 @@ fi
 
 for file in ${workSpaceDir}/*.tut
 do
-    pyfuncebleIOTitle="$(fgrep "pyfunceble-io-title" ${file} | awk -v FS=": " '{ print $2}')"
+    pyfuncebleIOTitle="$(grep "pyfunceble-io-title" ${file} | awk -v FS=": " '{ print $2}')"
 
     if [[ -z "${pyfuncebleIOTitle}" ]]
     then
