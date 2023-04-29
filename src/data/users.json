@@ -30,15 +30,6 @@
       "description": "Its infrastructure is actively using PyFunceble!"
     },
     {
-      "full_name": "DNS test",
-      "avatar": "https://avatars3.githubusercontent.com/u/59957240?s=400&v=4",
-      "links": {
-        "github": "https://github.com/dns-test",
-        "gitlab": "https://gitlab.com/my-privacy-dns/dns"
-      },
-      "description": "They are using PyFunceble against their RPZ zones!"
-    },
-    {
       "full_name": "External Sources",
       "avatar": "https://avatars1.githubusercontent.com/u/56031762?s=400&v=4",
       "links": {
