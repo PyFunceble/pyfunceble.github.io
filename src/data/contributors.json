@@ -186,6 +186,16 @@
       "links": {
         "github": "https://github.com/avatartw"
       }
+    },
+    {
+      "full_name": "Josenilson Ferreira da Silva",
+      "avatar": "https://avatars.githubusercontent.com/u/91392383?s=400&v=4",
+      "links": {
+        "github": "https://github.com/Nilsonfsilva",
+        "external": [
+          "https://nm.debian.org/person/nilsonfsilva/"
+        ]
+      }
     }
   ]
 }
