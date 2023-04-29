@@ -21,7 +21,7 @@ jobs:
 
     container:
       image: archlinux
-      options: --attach --tty --interactive
+      options: --attach --tty
 
     steps:
       - uses: actions/checkout@v3
