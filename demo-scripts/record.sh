@@ -38,6 +38,6 @@ for file in "${@}"; do
 
     rm -f "${castFile}"
 
-    stty cols "${castColumns}" rows "${castRows}"
+    stty cols "${castColumns}" rows "${castRows}" || true
     asciinema rec -t "${castTitle}" -c "tuterm ${file} --mode demo" "${castFile}"
 done
